@@ -302,6 +302,11 @@ header {
     justify-content: center;
 }
 
+#logos .works-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 450px));
+    justify-content: center;
+}
+
 /* Staggering Entrance */
 .work-card {
     background: var(--card-bg);
