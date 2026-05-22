@@ -297,6 +297,11 @@ header {
     gap: 1.5rem;
 }
 
+#posters .works-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 400px));
+    justify-content: center;
+}
+
 /* Staggering Entrance */
 .work-card {
     background: var(--card-bg);
