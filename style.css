@@ -358,6 +358,13 @@ header {
     cursor: zoom-in;
 }
 
+.card-img.contain-img {
+    background-color: #ffffff;
+}
+.card-img.contain-img img {
+    object-fit: contain;
+}
+
 .work-card:hover .card-img img {
     transform: scale(1.05);
 }
