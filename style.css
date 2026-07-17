@@ -302,6 +302,11 @@ header {
     justify-content: center;
 }
 
+#wallpapers .works-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 400px));
+    justify-content: center;
+}
+
 #logos .works-grid {
     grid-template-columns: repeat(auto-fit, minmax(320px, 450px));
     justify-content: center;
