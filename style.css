@@ -370,6 +370,10 @@ header {
     object-fit: contain;
 }
 
+.card-img.square-img {
+    aspect-ratio: 1/1;
+}
+
 .work-card:hover .card-img img {
     transform: scale(1.05);
 }
