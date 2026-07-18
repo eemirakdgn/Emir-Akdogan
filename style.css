@@ -627,3 +627,17 @@ header {
     margin: 0 auto;
     font-weight: 300;
 }
+
+/* Mobile Performance Optimizations */
+@media (max-width: 768px) {
+    .bg-blur {
+        animation: none !important;
+    }
+    .work-card.visible .card-img {
+        animation: none !important;
+        transform: none !important;
+    }
+    .card-img img {
+        transition: none !important; /* disable hover zoom on mobile to save memory */
+    }
+}
