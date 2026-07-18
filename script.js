@@ -140,6 +140,23 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Hamburger Menu Functionality
+    const hamburgerBtn = document.getElementById('hamburger-menu');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (hamburgerBtn) {
+        hamburgerBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu when a link is clicked
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+    }
+
     // Ethereal Glow Follow
     const glow = document.createElement('div');
     glow.id = 'glow';
