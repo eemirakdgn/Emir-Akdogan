@@ -10,14 +10,19 @@
 <body>
     <div class="hologram-bg"></div>
     <header>
-        <div class="logo"><strong>MEA</strong> <em>graphs</em></div>
+        <div class="logo">
+            <span class="logo-ea">EA</span>
+            <div class="logo-text">
+                <strong>EMİR AKDOĞAN</strong>
+                <span>GRAFİK TASARIM</span>
+            </div>
+        </div>
         <nav class="nav-links">
-            <a href="#about" data-en="ABOUT" data-tr="HAKKIMDA">ABOUT</a>
-            <a href="#design" data-en="DESIGN" data-tr="TASARIM">DESIGN</a>
-            <a href="#posters" data-en="POSTERS" data-tr="AFİŞ">POSTERS</a>
-            <a href="#wallpapers" data-en="WALLPAPERS" data-tr="DUVAR KAĞIDI">WALLPAPERS</a>
-            <a href="#logos" data-en="LOGOS" data-tr="LOGOLAR">LOGOS</a>
-            <a href="#contact" data-en="CONTACT" data-tr="İLETİŞİM">CONTACT</a>
+            <a href="#home" class="active" data-en="HOME" data-tr="Ana Sayfa">Ana Sayfa</a>
+            <a href="#design" data-en="WORKS" data-tr="Çalışmalar">Çalışmalar</a>
+            <a href="#services" data-en="SERVICES" data-tr="Hizmetler">Hizmetler</a>
+            <a href="#about" data-en="ABOUT" data-tr="Hakkımda">Hakkımda</a>
+            <a href="#contact" data-en="CONTACT" data-tr="İletişim">İletişim</a>
         </nav>
         <div class="nav-right">
             <button class="lang-btn" id="lang-toggle">TR</button>
@@ -25,6 +30,7 @@
                 <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
                 <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
             </button>
+            <a href="#contact" class="btn-outline" data-en="GET QUOTE" data-tr="TEKLİF AL">TEKLİF AL</a>
             <button id="hamburger-menu" aria-label="Toggle Menu">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
             </button>
@@ -34,391 +40,478 @@
     <main>
         <section class="hero" id="home">
             <div id="stars"></div>
-            <h1>Mehmet Emir Akdoğan</h1>
-            <p data-en="Exploring the boundaries of minimal and modern expression." data-tr="Minimal ve modern ifadenin sınırlarını keşfediyorum.">Exploring the boundaries of minimal and modern expression.</p>
-            <a href="#design" class="btn-outline view-work-btn" data-en="VIEW WORK" data-tr="ÇALIŞMALARI GÖR">VIEW WORK</a>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>
+                        <span data-en="Graphic design," data-tr="Grafik tasarım,">Grafik tasarım,</span><br>
+                        <span class="highlight" data-en="for your brand." data-tr="markanız için.">markanız için.</span>
+                    </h1>
+                    <p data-en="I prepare original, eye-catching designs for social media and digital platforms." data-tr="Sosyal medya ve dijital platformlar için özgün, dikkat çekici tasarımlar hazırlıyorum.">Sosyal medya ve dijital platformlar için özgün, dikkat çekici tasarımlar hazırlıyorum.</p>
+                    <a href="#design" class="btn-outline view-work-btn">
+                        <span data-en="SEE MY WORK" data-tr="ÇALIŞMALARIMI GÖR">ÇALIŞMALARIMI GÖR</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="hero-visual">
+                    <div class="laptop-mockup fade-in-scroll">
+                        <img src="assets/hero_laptop_transparent.png" alt="Portfolio Presentation">
+                    </div>
+                </div>
+            </div>
         </section>
 
-
+        <!-- WORKS SECTION -->
         <section class="works-section" id="design">
-            <h2 class="section-title fade-in-scroll" data-en="SELECTED WORKS" data-tr="SEÇKİN ÇALIŞMALAR">SELECTED WORKS</h2>
-            <div class="works-grid">
-
-                <div class="work-card">
+            <div class="works-header">
+                <div>
+                    <h2 class="section-title fade-in-scroll" data-en="SELECTED WORKS" data-tr="SEÇİLMİŞ ÇALIŞMALAR">SEÇİLMİŞ ÇALIŞMALAR</h2>
+                    <p class="section-subtitle fade-in-scroll" data-en="Some selected works from my design fields." data-tr="Tasarım alanlarından seçtiğim bazı çalışmalar.">Tasarım alanlarından seçtiğim bazı çalışmalar.</p>
+                </div>
+                <div class="works-filters fade-in-scroll">
+                    <button class="filter-btn active" data-en="ALL" data-tr="TÜMÜ" data-filter="all">TÜMÜ</button>
+                    <button class="filter-btn" data-en="SOCIAL MEDIA" data-tr="SOSYAL MEDYA" data-filter="social">SOSYAL MEDYA</button>
+                    <button class="filter-btn" data-en="FOOTBALL & SPORTS" data-tr="FUTBOL & SPOR" data-filter="sports">FUTBOL & SPOR</button>
+                    <button class="filter-btn" data-en="WALLPAPER" data-tr="DUVAR KAĞIDI" data-filter="wallpaper">DUVAR KAĞIDI</button>
+                    <button class="filter-btn" data-en="LOGO" data-tr="LOGO" data-filter="logo">LOGO</button>
+                </div>
+            </div>
+            <div class="works-grid fade-in-scroll">
+                
+                <div class="work-card" data-category="social">
                     <div class="card-img">
-                        <img src="assets/spain_argentina_final.jpg" alt="2026 World Cup Final Concept" loading="lazy">
+                        <img src="assets/denta_plus.jpg" alt="Denta Plus - Sağlıklı Gülüşler" loading="lazy">
                     </div>
                     <div class="card-info">
-                        <h3 data-en="2026 World Cup Final Concept" data-tr="2026 Dünya Kupası Finali Konsepti">2026 Dünya Kupası Finali Konsepti</h3>
-                        <p class="card-desc" data-en="A dream final matchday design concept for the 2026 World Cup featuring Spain and Argentina, starring players like Messi and Lamine Yamal." data-tr="2026 Dünya Kupası finali için İspanya ve Arjantin'i karşı karşıya getiren, Messi ve Lamine Yamal gibi yıldızları içeren rüya final maç günü tasarımı.">2026 Dünya Kupası finali için İspanya ve Arjantin'i karşı karşıya getiren, Messi ve Lamine Yamal gibi yıldızları içeren rüya final maç günü tasarımı.</p>
+                        <h3 data-en="Denta Plus - Dental Clinic" data-tr="Denta Plus - Sağlıklı Gülüşler">Denta Plus - Sağlıklı Gülüşler</h3>
                     </div>
                 </div>
 
-                <div class="work-card">
+                <div class="work-card" data-category="social">
                     <div class="card-img">
-                        <img src="assets/tielemans_man_utd.jpg" alt="Youri Tielemans - Manchester United Transfer" loading="lazy">
+                        <img src="assets/barbershop.jpg" alt="Tarzını Yenile - Erkek Kuaförü" loading="lazy">
                     </div>
                     <div class="card-info">
-                        <h3 data-en="Youri Tielemans - Manchester United Transfer Concept" data-tr="Youri Tielemans - Manchester United Transfer Konsepti">Youri Tielemans - Manchester United Transfer Konsepti</h3>
-                        <p class="card-desc" data-en="An aesthetic red-themed transfer announcement concept for Youri Tielemans moving from Aston Villa to Manchester United, enriched with the silhouette of Old Trafford stadium." data-tr="Youri Tielemans'ın Aston Villa'dan Manchester United'a transferini duyuran, Old Trafford stadyumu silüeti ile zenginleştirilmiş kırmızı ağırlıklı estetik bir transfer duyurusu konsepti.">Youri Tielemans'ın Aston Villa'dan Manchester United'a transferini duyuran, Old Trafford stadyumu silüeti ile zenginleştirilmiş kırmızı ağırlıklı estetik bir transfer duyurusu konsepti.</p>
+                        <h3 data-en="Renew Your Style - Barbershop" data-tr="Tarzını Yenile - Erkek Kuaförü">Tarzını Yenile - Erkek Kuaförü</h3>
                     </div>
                 </div>
 
-                <div class="work-card">
+                <div class="work-card" data-category="social">
                     <div class="card-img">
-                        <img src="assets/cucurella_real_madrid.jpg" alt="Marc Cucurella - Real Madrid Transfer Announcement" loading="lazy">
+                        <img src="assets/aura_beauty.jpg" alt="Aura Beauty - Profesyonel Bakım Hizmetleri" loading="lazy">
                     </div>
                     <div class="card-info">
-                        <h3 data-en="Marc Cucurella - Real Madrid Transfer Concept" data-tr="Marc Cucurella - Real Madrid Transfer Konsepti">Marc Cucurella - Real Madrid Transfer Konsepti</h3>
-                        <p class="card-desc" data-en="A stylish transfer announcement concept for Marc Cucurella to Real Madrid, blended with the Santiago Bernabéu stadium background and the iconic club crest." data-tr="Marc Cucurella'nın Real Madrid'e transferini duyuran, Santiago Bernabéu stadyumu arka planı ve ikonik Real Madrid amblemiyle harmanlanmış şık bir transfer duyurusu tasarımı.">Marc Cucurella'nın Real Madrid'e transferini duyuran, Santiago Bernabéu stadyumu arka planı ve ikonik Real Madrid amblemiyle harmanlanmış şık bir transfer duyurusu tasarımı.</p>
+                        <h3 data-en="Aura Beauty - Professional Care" data-tr="Aura Beauty - Profesyonel Bakım">Aura Beauty - Profesyonel Bakım</h3>
                     </div>
                 </div>
 
-                <div class="work-card">
+                <div class="work-card" data-category="social">
+                    <div class="card-img">
+                        <img src="assets/lux_wear.jpg" alt="Lux Wear - 2026 Sonbahar Koleksiyonu" loading="lazy">
+                    </div>
+                    <div class="card-info">
+                        <h3 data-en="Lux Wear - 2026 Autumn Collection" data-tr="Lux Wear - 2026 Sonbahar Koleksiyonu">Lux Wear - 2026 Sonbahar Koleksiyonu</h3>
+                    </div>
+                </div>
+
+                <div class="work-card" data-category="social">
+                    <div class="card-img">
+                        <img src="assets/prime_motors.jpg" alt="Prime Motors - Hayalinizdeki Araba" loading="lazy">
+                    </div>
+                    <div class="card-info">
+                        <h3 data-en="Prime Motors - Dream Cars" data-tr="Prime Motors - Hayalinizdeki Araba">Prime Motors - Hayalinizdeki Araba</h3>
+                    </div>
+                </div>
+
+                <div class="work-card" data-category="social">
+                    <div class="card-img">
+                        <img src="assets/nova_coffee.jpg" alt="Nova Coffee - Yeni Sezon Harmanı" loading="lazy">
+                    </div>
+                    <div class="card-info">
+                        <h3 data-en="Nova Coffee - New Season Blend" data-tr="Nova Coffee - Yeni Sezon Harmanı">Nova Coffee - Yeni Sezon Harmanı</h3>
+                    </div>
+                </div>
+
+                <div class="work-card" data-category="social">
+                    <div class="card-img">
+                        <img src="assets/alpha_gym.jpg" alt="Alpha Gym - Değişim Bugün Başlıyor" loading="lazy">
+                    </div>
+                    <div class="card-info">
+                        <h3 data-en="Alpha Gym - Transformation Starts Today" data-tr="Alpha Gym - Değişim Bugün Başlıyor">Alpha Gym - Değişim Bugün Başlıyor</h3>
+                    </div>
+                </div>
+                
+                <div class="work-card" data-category="sports">
                     <div class="card-img">
                         <img src="assets/arsenal_psg_starting_xi.jpg" alt="Arsenal vs PSG - Starting XI" loading="lazy">
                     </div>
                     <div class="card-info">
                         <h3 data-en="Arsenal vs PSG - Starting XI" data-tr="Arsenal vs PSG - İlk 11 Kadrosu">Arsenal vs PSG - İlk 11 Kadrosu</h3>
-                        <p class="card-desc" data-en="A dynamic Starting XI and squad design concept for the massive clash between Arsenal and Paris Saint-Germain, highlighting Martin Ødegaard." data-tr="Arsenal ve Paris Saint-Germain arasında oynanacak dev maç öncesi hazırlanan, Martin Ødegaard'ı öne çıkaran dinamik ilk 11 ve kadro tasarımı konsepti.">Arsenal ve Paris Saint-Germain arasında oynanacak dev maç öncesi hazırlanan, Martin Ødegaard'ı öne çıkaran dinamik ilk 11 ve kadro tasarımı konsepti.</p>
                     </div>
                 </div>
 
-                <div class="work-card">
-                    <div class="card-img">
-                        <img src="assets/chelsea_benfica_fulltime.jpg" alt="Chelsea vs Benfica - Full Time" loading="lazy">
-                    </div>
-                    <div class="card-info">
-                        <h3 data-en="Chelsea vs Benfica - Full Time" data-tr="Chelsea vs Benfica - Maç Sonucu">Chelsea vs Benfica - Maç Sonucu</h3>
-                        <p class="card-desc" data-en="A Champions League themed full-time scoreboard graphic. A dynamic composition capturing the players' celebration after Chelsea's 3-0 victory over Benfica." data-tr="Şampiyonlar Ligi konseptli maç sonu skorbord tasarımı. Chelsea'nin Benfica'yı 3-0 mağlup ettiği maçın ardından futbolcuların sevinç anını yansıtan dinamik bir çalışma.">Şampiyonlar Ligi konseptli maç sonu skorbord tasarımı. Chelsea'nin Benfica'yı 3-0 mağlup ettiği maçın ardından futbolcuların sevinç anını yansıtan dinamik bir çalışma.</p>
-                    </div>
-                </div>
-
-                <div class="work-card">
-                    <div class="card-img">
-                        <img src="assets/bvb_fcb_fulltime.jpg" alt="BVB vs FC Bayern - Full Time" loading="lazy">
-                    </div>
-                    <div class="card-info">
-                        <h3 data-en="BVB vs FC Bayern - Full Time" data-tr="BVB vs FC Bayern - Maç Sonucu">BVB vs FC Bayern - Maç Sonucu</h3>
-                        <p class="card-desc" data-en="A full-time scoreboard graphic concept for Borussia Dortmund's 4-0 victory over Bayern Munich, featuring a 'Bundesliga 2026' theme." data-tr="Borussia Dortmund'un Bayern Münih'e karşı aldığı 4-0'lık galibiyeti duyuran, 'Bundesliga 2026' konseptli maç sonu skorbord tasarımı.">Borussia Dortmund'un Bayern Münih'e karşı aldığı 4-0'lık galibiyeti duyuran, 'Bundesliga 2026' konseptli maç sonu skorbord tasarımı.</p>
-                    </div>
-                </div>
-
-                <div class="work-card">
-                    <div class="card-img">
-                        <img src="assets/vedat_signing.jpg" alt="Vedat Muriqi - Official Signing Concept" loading="lazy">
-                    </div>
-                    <div class="card-info">
-                        <h3 data-en="Vedat Muriqi - Official Signing" data-tr="Vedat Muriqi - Resmi İmza Konsepti">Vedat Muriqi - Resmi İmza Konsepti</h3>
-                        <p class="card-desc" data-en="An official signing announcement concept design for Vedat Muriqi's transfer to Fenerbahçe, featuring neon light details and a 'Done Deal' theme." data-tr="Vedat Muriqi'nin Fenerbahçe'ye transferini duyuran, neon ışık detayları ve 'Done Deal' konseptiyle hazırlanmış resmi imza tasarımı.">Vedat Muriqi'nin Fenerbahçe'ye transferini duyuran, neon ışık detayları ve 'Done Deal' konseptiyle hazırlanmış resmi imza tasarımı.</p>
-                    </div>
-                </div>
-
-                <div class="work-card">
-                    <div class="card-img">
-                        <img src="assets/fikstur.jpg" alt="Fenerbahçe - 2026/2027 Fikstür Konsepti" loading="lazy">
-                    </div>
-                    <div class="card-info">
-                        <h3 data-en="Fenerbahçe - 26/27 Fixture Concept" data-tr="Fenerbahçe - 26/27 Fikstür Konsepti">Fenerbahçe - 26/27 Fikstür Konsepti</h3>
-                        <p class="card-desc" data-en="A match calendar concept design displaying Fenerbahçe's 2026-2027 Trendyol Super Lig fixture alongside the logos of all league opponents." data-tr="Fenerbahçe'nin 2026-2027 sezonu Trendyol Süper Lig fikstürünü, ligdeki tüm rakiplerin logolarıyla birlikte gösteren maç takvimi konsept tasarımı.">Fenerbahçe'nin 2026-2027 sezonu Trendyol Süper Lig fikstürünü, ligdeki tüm rakiplerin logolarıyla birlikte gösteren maç takvimi konsept tasarımı.</p>
-                    </div>
-                </div>
-
-                <div class="work-card">
-                    <div class="card-img">
-                        <img src="assets/kamp_kadrosu.jpg" alt="Fenerbahçe - Kamp Kadrosu" loading="lazy">
-                    </div>
-                    <div class="card-info">
-                        <h3 data-en="Fenerbahçe - Squad List Graphic" data-tr="Fenerbahçe - Maç Kadrosu Görseli">Fenerbahçe - Maç Kadrosu Görseli</h3>
-                        <p class="card-desc" data-en="A matchday squad list graphic concept for the Galatasaray derby, featuring an alternative and creative roster for Fenerbahçe." data-tr="Galatasaray derbisi için hazırlanan, alternatif ve yaratıcı isimlerle zenginleştirilmiş Fenerbahçe kamp kadrosu maç günü görseli konsepti.">Galatasaray derbisi için hazırlanan, alternatif ve yaratıcı isimlerle zenginleştirilmiş Fenerbahçe kamp kadrosu maç günü görseli konsepti.</p>
-                    </div>
-                </div>
-
-                <div class="work-card">
-                    <div class="card-img">
-                        <img src="assets/motm_asensio.jpg" alt="Marco Asensio - Man of the Match" loading="lazy">
-                    </div>
-                    <div class="card-info">
-                        <h3 data-en="Man of the Match - Marco Asensio" data-tr="Maçın Adamı - Marco Asensio">Man of the Match - Marco Asensio</h3>
-                        <p class="card-desc" data-en="A Champions League themed 'Man of the Match' design. A sleek composition presenting Marco Asensio's match statistics (passes, goals, assists) with striking typography." data-tr="Şampiyonlar Ligi konseptli 'Maçın Adamı' tasarımı. Marco Asensio'nun istatistiklerini (pas, gol, asist) sade ve çarpıcı bir tipografi ile sunan şık bir çalışma.">Şampiyonlar Ligi konseptli 'Maçın Adamı' tasarımı. Marco Asensio'nun istatistiklerini (pas, gol, asist) sade ve çarpıcı bir tipografi ile sunan şık bir çalışma.</p>
-                    </div>
-                </div>
-
-                <div class="work-card">
-                    <div class="card-img">
-                        <img src="assets/ollie_watkins.jpg" alt="Ollie Watkins - Transfer Konsepti" loading="lazy">
-                    </div>
-                    <div class="card-info">
-                        <h3 data-en="Ollie Watkins - Transfer Concept" data-tr="Ollie Watkins - Transfer Konsepti">Ollie Watkins - Transfer Concept</h3>
-                        <p class="card-desc" data-en="A dynamic and creative transfer concept design featuring Ollie Watkins in a Fenerbahçe jersey, combining two different action poses." data-tr="Ollie Watkins'in Fenerbahçe formasıyla resmedildiği, iki farklı aksiyon pozunu bir araya getiren dinamik ve yaratıcı bir transfer konsept tasarımı.">Ollie Watkins'in Fenerbahçe formasıyla resmedildiği, iki farklı aksiyon pozunu bir araya getiren dinamik ve yaratıcı bir transfer konsept tasarımı.</p>
-                    </div>
-                </div>
-
-                <div class="work-card">
-                    <div class="card-img">
-                        <img src="assets/filenin_sultanlari.jpg" alt="Filenin Sultanları - Bizim Çocuklar" loading="lazy">
-                    </div>
-                    <div class="card-info">
-                        <h3 data-en="Sultans of the Net - Our Children" data-tr="Filenin Sultanları - Bizim Çocuklar">Filenin Sultanları - Bizim Çocuklar</h3>
-                        <p class="card-desc" data-en="A special design dedicated to the Turkish Women's National Volleyball Team. A composition highlighting the epic story of those who proudly carry the crescent and star on their chests with pure dedication." data-tr="Türkiye A Milli Kadın Voleybol Takımı için hazırlanmış özel tasarım. Sahada canını dişine takarak ay-yıldızı gururla taşıyanların destanını vurgulayan, anlamlı bir metinle desteklenmiş kompozisyon.">Türkiye A Milli Kadın Voleybol Takımı için hazırlanmış özel tasarım. Sahada canını dişine takarak ay-yıldızı gururla taşıyanların destanını vurgulayan, anlamlı bir metinle desteklenmiş kompozisyon.</p>
-                    </div>
-                </div>
-
-                <div class="work-card">
-                    <div class="card-img">
-                        <img src="assets/serhou_guirassy.jpg" alt="Serhou Guirassy - Transfer Konsepti" loading="lazy">
-                    </div>
-                    <div class="card-info">
-                        <h3 data-en="Serhou Guirassy - Transfer Concept" data-tr="Serhou Guirassy - Transfer Konsepti">Serhou Guirassy - Transfer Concept</h3>
-                        <p class="card-desc" data-en="A dynamic and stylish transfer concept design featuring Serhou Guirassy in the legendary retro Fenerbahçe jersey." data-tr="Serhou Guirassy'nin efsanevi çubuklu retro Fenerbahçe formasıyla resmedildiği, dinamik ve şık bir transfer konsepti tasarımı.">Serhou Guirassy'nin efsanevi çubuklu retro Fenerbahçe formasıyla resmedildiği, dinamik ve şık bir transfer konsepti tasarımı.</p>
-                    </div>
-                </div>
-
-                <div class="work-card">
-                    <div class="card-img">
-                        <img src="assets/mason_greenwood.jpg" alt="Mason Greenwood - Transfer Konsepti" loading="lazy">
-                    </div>
-                    <div class="card-info">
-                        <h3 data-en="Mason Greenwood - Transfer Concept" data-tr="Mason Greenwood - Transfer Konsepti">Mason Greenwood - Transfer Concept</h3>
-                        <p class="card-desc" data-en="A concept design piece illustrating Mason Greenwood in a Fenerbahçe jersey, inspired by potential transfer rumors." data-tr="Mason Greenwood'un Fenerbahçe formasıyla resmedildiği, potansiyel transfer söylentilerinden ilham alınarak hazırlanmış konsept tasarım çalışması.">Mason Greenwood'un Fenerbahçe formasıyla resmedildiği, potansiyel transfer söylentilerinden ilham alınarak hazırlanmış konsept tasarım çalışması.</p>
-                    </div>
-                </div>
-
-                <div class="work-card">
-                    <div class="card-img">
-                        <img src="assets/jorge_jesus.jpg" alt="Jorge Jesus - Hikayem Bitmedi" loading="lazy">
-                    </div>
-                    <div class="card-info">
-                        <h3 data-en="Jorge Jesus &quot;My Story Isn't Over&quot;" data-tr="Jorge Jesus &quot;Hikayem Bitmedi&quot;">Jorge Jesus "Hikayem Bitmedi"</h3>
-                        <p class="card-desc" data-en="A concept poster design inspired by Fenerbahçe manager Jorge Jesus's quote &quot;My story isn't over&quot;, supported by the club logo and classic yellow-navy blue colors." data-tr="Fenerbahçe teknik direktörü Jorge Jesus'un &quot;Hikayem bitmedi&quot; sözünden ilham alınarak tasarlanmış, kulüp logosu ve klasik sarı-lacivert renklerle desteklenmiş bir konsept poster çalışması.">Fenerbahçe teknik direktörü Jorge Jesus'un "Hikayem bitmedi" sözünden ilham alınarak tasarlanmış, kulüp logosu ve klasik sarı-lacivert renklerle desteklenmiş bir konsept poster çalışması.</p>
-                    </div>
-                </div>
-
-                <div class="work-card">
-                    <div class="card-img">
-                        <img src="assets/vedat_muriqi.jpg" alt="Vedat Muriqi - Transfer Tercihi" loading="lazy">
-                    </div>
-                    <div class="card-info">
-                        <h3 data-en="Vedat Muriqi Transfer Decision" data-tr="Vedat Muriqi Tercihini Yaptı">Vedat Muriqi Tercihini Yaptı</h3>
-                        <p class="card-desc" data-en="A transfer announcement concept design highlighting Vedat Muriqi's decision to join Fenerbahçe over rival clubs, featuring club presidents in the background to emphasize the transfer duel." data-tr="Vedat Muriqi'nin transfer sürecinde tercihini Fenerbahçe'den yana kullanmasını konu alan, arka planda kulüp başkanlarının transfer düellosunu yansıtan bir konsept tasarım.">Vedat Muriqi'nin transfer sürecinde tercihini Fenerbahçe'den yana kullanmasını konu alan, arka planda kulüp başkanlarının transfer düellosunu yansıtan bir konsept tasarım.</p>
-                    </div>
-                </div>
-
-                <div class="work-card">
-                    <div class="card-img">
-                        <img src="assets/image 12.jpeg" alt="Fenerbahçe SK - Marco Asensio" loading="lazy">
-                    </div>
-                    <div class="card-info">
-                        <h3 data-en="Fenerbahçe SK - Marco Asensio" data-tr="Fenerbahçe SK - Marco Asensio">Fenerbahçe SK - Marco Asensio</h3>
-                        <p class="card-desc" data-en="A surreal digital sports composite created for Fenerbahçe, featuring a player's duality with a detailed close-up and a smaller action figure. The background combines a realistic stadium exterior with a fantastical cosmic-planetary element and a stylized mountainscape, all unified through advanced photo manipulation, texture blending, and a consistent cool tone color grade." data-tr="Fenerbahçe için hazırlanan bu sürreal dijital spor kompozit çalışmasında, oyuncunun ikiliği, detaylı bir yakın plan ve daha küçük bir aksiyon figürüyle yansıtılıyor. Arka planda gerçekçi bir stadyum dış görünümü, fantastik kozmik-gezegen unsuru ve stilize bir dağ manzarası; gelişmiş fotoğraf manipülasyonu, doku harmanlama ve tutarlı soğuk ton renk derecelendirmesiyle bir araya getirilerek bütünlük sağlanmıştır.">A surreal digital sports composite created for Fenerbahçe, featuring a player's duality with a detailed close-up and a smaller action figure. The background combines a realistic stadium exterior with a fantastical cosmic-planetary element and a stylized mountainscape, all unified through advanced photo manipulation, texture blending, and a consistent cool tone color grade.</p>
-                    </div>
-                </div>
-                <div class="work-card">
-                    <div class="card-img">
-                        <img src="assets/image 4.jpeg" alt="World Cup Matchday - Türkiye v Australia" loading="lazy">
-                    </div>
-                    <div class="card-info">
-                        <h3 data-en="World Cup Matchday - Türkiye v Australia" data-tr="Dünya Kupası Maç Günü - Türkiye v Avustralya">World Cup Matchday - Türkiye v Australia</h3>
-                        <p class="card-desc" data-en="A dynamic matchday concept for Türkiye in the World Cup 2026. This graphic puts Arda Güler and the team in focus with a dramatic textured red background, bold text-overlay branding, and clear icon-based flag presentations for a clean yet powerful event preview." data-tr="2026 Dünya Kupası'nda Türkiye için dinamik bir maç günü konsepti. Arda Güler'i odağa alan bu çalışma, dramatik kırmızı arka planı ve ikon tabanlı detaylarıyla güçlü bir etkinlik önizlemesi sunar.">A dynamic matchday concept for Türkiye in the World Cup 2026. This graphic puts Arda Güler and the team in focus with a dramatic textured red background, bold text-overlay branding, and clear icon-based flag presentations for a clean yet powerful event preview.</p>
-                    </div>
-                </div>
-                <div class="work-card">
+                <div class="work-card" data-category="sports">
                     <div class="card-img">
                         <img src="assets/image 2.jpeg" alt="Tadić 'On Fire' Stylized Poster" loading="lazy">
                     </div>
                     <div class="card-info">
                         <h3 data-en="Tadić &quot;On Fire&quot; Stylized Poster" data-tr="Tadić &quot;On Fire&quot; Stilize Poster">Tadić "On Fire" Stylized Poster</h3>
-                        <p class="card-desc" data-en="A highly textured, dynamic player appreciation poster for Dušan Tadić. It features a blended multi-layer composition with a stylized 'on fire' typographic overlay, dynamic lighting, and an impactful 'fists of victory' pose, all set within a gritty, atmospheric backdrop." data-tr="Dušan Tadić için tasarlanmış yüksek dokulu, dinamik bir poster. Stilize edilmiş 'on fire' tipografisi, dinamik ışıklandırma ve etkili bir kompozisyon ile harmanlanmıştır.">A highly textured, dynamic player appreciation poster for Dušan Tadić. It features a blended multi-layer composition with a stylized 'on fire' typographic overlay, dynamic lighting, and an impactful 'fists of victory' pose, all set within a gritty, atmospheric backdrop.</p>
                     </div>
                 </div>
-                <div class="work-card">
-                    <div class="card-img contain-img">
+
+                <div class="work-card" data-category="sports">
+                    <div class="card-img">
+                        <img src="assets/spain_argentina_final.jpg" alt="2026 World Cup Final Concept" loading="lazy">
+                    </div>
+                    <div class="card-info">
+                        <h3 data-en="2026 World Cup Final Concept" data-tr="2026 Dünya Kupası Finali Konsepti">2026 Dünya Kupası Finali Konsepti</h3>
+                    </div>
+                </div>
+
+                <div class="work-card" data-category="sports">
+                    <div class="card-img">
+                        <img src="assets/tielemans_man_utd.jpg" alt="Youri Tielemans - Manchester United Transfer" loading="lazy">
+                    </div>
+                    <div class="card-info">
+                        <h3 data-en="Youri Tielemans - Transfer Concept" data-tr="Youri Tielemans - Transfer Konsepti">Youri Tielemans - Transfer Konsepti</h3>
+                    </div>
+                </div>
+
+                <div class="work-card" data-category="sports">
+                    <div class="card-img">
+                        <img src="assets/vedat_signing.jpg" alt="Vedat Muriqi - Official Signing Concept" loading="lazy">
+                    </div>
+                    <div class="card-info">
+                        <h3 data-en="Vedat Muriqi - Official Signing" data-tr="Vedat Muriqi - Resmi İmza Konsepti">Vedat Muriqi - Resmi İmza Konsepti</h3>
+                    </div>
+                </div>
+
+                <div class="work-card" data-category="sports">
+                    <div class="card-img">
+                        <img src="assets/motm_asensio.jpg" alt="Marco Asensio - Man of the Match" loading="lazy">
+                    </div>
+                    <div class="card-info">
+                        <h3 data-en="Man of the Match - Marco Asensio" data-tr="Maçın Adamı - Marco Asensio">Maçın Adamı - Marco Asensio</h3>
+                    </div>
+                </div>
+
+                <div class="work-card" data-category="sports">
+                    <div class="card-img">
+                        <img src="assets/ollie_watkins.jpg" alt="Ollie Watkins - Transfer Konsepti" loading="lazy">
+                    </div>
+                    <div class="card-info">
+                        <h3 data-en="Ollie Watkins - Transfer Concept" data-tr="Ollie Watkins - Transfer Konsepti">Ollie Watkins - Transfer Concept</h3>
+                    </div>
+                </div>
+
+                <div class="work-card" data-category="sports">
+                    <div class="card-img">
+                        <img src="assets/serhou_guirassy.jpg" alt="Serhou Guirassy - Transfer Konsepti" loading="lazy">
+                    </div>
+                    <div class="card-info">
+                        <h3 data-en="Serhou Guirassy - Transfer Concept" data-tr="Serhou Guirassy - Transfer Konsepti">Serhou Guirassy - Transfer Concept</h3>
+                    </div>
+                </div>
+
+                <div class="work-card" data-category="sports">
+                    <div class="card-img">
+                        <img src="assets/cucurella_real_madrid.jpg" alt="Marc Cucurella - Real Madrid Transfer Announcement" loading="lazy">
+                    </div>
+                    <div class="card-info">
+                        <h3 data-en="Marc Cucurella - Real Madrid Transfer Concept" data-tr="Marc Cucurella - Real Madrid Transfer Konsepti">Marc Cucurella - Real Madrid Transfer Konsepti</h3>
+                    </div>
+                </div>
+
+                <div class="work-card" data-category="sports">
+                    <div class="card-img">
+                        <img src="assets/chelsea_benfica_fulltime.jpg" alt="Chelsea vs Benfica - Full Time" loading="lazy">
+                    </div>
+                    <div class="card-info">
+                        <h3 data-en="Chelsea vs Benfica - Full Time" data-tr="Chelsea vs Benfica - Maç Sonucu">Chelsea vs Benfica - Maç Sonucu</h3>
+                    </div>
+                </div>
+
+                <div class="work-card" data-category="sports">
+                    <div class="card-img">
+                        <img src="assets/bvb_fcb_fulltime.jpg" alt="BVB vs FC Bayern - Full Time" loading="lazy">
+                    </div>
+                    <div class="card-info">
+                        <h3 data-en="BVB vs FC Bayern - Full Time" data-tr="BVB vs FC Bayern - Maç Sonucu">BVB vs FC Bayern - Maç Sonucu</h3>
+                    </div>
+                </div>
+
+                <div class="work-card" data-category="sports">
+                    <div class="card-img">
+                        <img src="assets/fikstur.jpg" alt="Fenerbahçe - 2026/2027 Fikstür Konsepti" loading="lazy">
+                    </div>
+                    <div class="card-info">
+                        <h3 data-en="Fenerbahçe - 26/27 Fixture Concept" data-tr="Fenerbahçe - 26/27 Fikstür Konsepti">Fenerbahçe - 26/27 Fikstür Konsepti</h3>
+                    </div>
+                </div>
+
+                <div class="work-card" data-category="sports">
+                    <div class="card-img">
+                        <img src="assets/kamp_kadrosu.jpg" alt="Fenerbahçe - Kamp Kadrosu" loading="lazy">
+                    </div>
+                    <div class="card-info">
+                        <h3 data-en="Fenerbahçe - Squad List Graphic" data-tr="Fenerbahçe - Maç Kadrosu Görseli">Fenerbahçe - Maç Kadrosu Görseli</h3>
+                    </div>
+                </div>
+
+                <div class="work-card" data-category="sports">
+                    <div class="card-img">
+                        <img src="assets/filenin_sultanlari.jpg" alt="Filenin Sultanları - Bizim Çocuklar" loading="lazy">
+                    </div>
+                    <div class="card-info">
+                        <h3 data-en="Sultans of the Net - Our Children" data-tr="Filenin Sultanları - Bizim Çocuklar">Filenin Sultanları - Bizim Çocuklar</h3>
+                    </div>
+                </div>
+
+                <div class="work-card" data-category="sports">
+                    <div class="card-img">
+                        <img src="assets/mason_greenwood.jpg" alt="Mason Greenwood - Transfer Konsepti" loading="lazy">
+                    </div>
+                    <div class="card-info">
+                        <h3 data-en="Mason Greenwood - Transfer Concept" data-tr="Mason Greenwood - Transfer Konsepti">Mason Greenwood - Transfer Concept</h3>
+                    </div>
+                </div>
+
+                <div class="work-card" data-category="sports">
+                    <div class="card-img">
+                        <img src="assets/jorge_jesus.jpg" alt="Jorge Jesus - Hikayem Bitmedi" loading="lazy">
+                    </div>
+                    <div class="card-info">
+                        <h3 data-en="Jorge Jesus &quot;My Story Isn't Over&quot;" data-tr="Jorge Jesus &quot;Hikayem Bitmedi&quot;">Jorge Jesus "Hikayem Bitmedi"</h3>
+                    </div>
+                </div>
+
+                <div class="work-card" data-category="sports">
+                    <div class="card-img">
+                        <img src="assets/vedat_muriqi.jpg" alt="Vedat Muriqi - Transfer Tercihi" loading="lazy">
+                    </div>
+                    <div class="card-info">
+                        <h3 data-en="Vedat Muriqi Transfer Decision" data-tr="Vedat Muriqi Tercihini Yaptı">Vedat Muriqi Tercihini Yaptı</h3>
+                    </div>
+                </div>
+
+                <div class="work-card" data-category="sports">
+                    <div class="card-img">
+                        <img src="assets/image 12.jpeg" alt="Fenerbahçe SK - Marco Asensio" loading="lazy">
+                    </div>
+                    <div class="card-info">
+                        <h3 data-en="Fenerbahçe SK - Marco Asensio" data-tr="Fenerbahçe SK - Marco Asensio">Fenerbahçe SK - Marco Asensio</h3>
+                    </div>
+                </div>
+
+                <div class="work-card" data-category="sports">
+                    <div class="card-img">
+                        <img src="assets/image 4.jpeg" alt="World Cup Matchday - Türkiye v Australia" loading="lazy">
+                    </div>
+                    <div class="card-info">
+                        <h3 data-en="World Cup Matchday - Türkiye v Australia" data-tr="Dünya Kupası Maç Günü - Türkiye v Avustralya">World Cup Matchday - Türkiye v Australia</h3>
+                    </div>
+                </div>
+
+                <div class="work-card" data-category="sports">
+                    <div class="card-img">
                         <img src="assets/image 1.jpeg" alt="Matchday Concept: Sivasspor v Fenerbahçe" loading="lazy">
                     </div>
                     <div class="card-info">
                         <h3 data-en="Matchday Concept: Sivasspor v Fenerbahçe" data-tr="Maç Günü Konsepti: Sivasspor v Fenerbahçe">Matchday Concept: Sivasspor v Fenerbahçe</h3>
-                        <p class="card-desc" data-en="A unique, double-player focus matchday concept graphic. The design cleverly overlays a central shield shape onto two Fenerbahçe players (one in full action, one posed in celebrating), set against a clean, uncluttered white background with precise match details." data-tr="İki oyuncu odaklı, eşsiz bir maç günü konsept grafiği. Tasarım, merkezi bir kalkan şeklini iki Fenerbahçe oyuncusu üzerine akıllıca yerleştirerek temiz ve sade beyaz bir arka planda sunuyor.">A unique, double-player focus matchday concept graphic. The design cleverly overlays a central shield shape onto two Fenerbahçe players (one in full action, one posed in celebrating), set against a clean, uncluttered white background with precise match details.</p>
                     </div>
                 </div>
 
-                <div class="work-card">
+                <div class="work-card" data-category="sports">
                     <div class="card-img">
                         <img src="assets/image 3.jpeg" alt="Messi: Parisian Maestro" loading="lazy">
                     </div>
                     <div class="card-info">
                         <h3 data-en="Messi: Parisian Maestro" data-tr="Messi: Parisli Maestro">Messi: Parisian Maestro</h3>
-                        <p class="card-desc" data-en="An intricate and vibrant composite design showcasing Lionel Messi in his PSG kit. It weaves multiple action poses and a central celebratory image together, integrated with the PSG club crest and abstract geometric lines against a rich, dark atmospheric purple background, highlighting his artistry." data-tr="Lionel Messi'yi PSG formasıyla sergileyen canlı bir kompozit tasarım. Oyuncunun sanatını öne çıkarmak için karanlık atmosferik mor arka planda geometrik hatlarla detaylandırılmıştır.">An intricate and vibrant composite design showcasing Lionel Messi in his PSG kit. It weaves multiple action poses and a central celebratory image together, integrated with the PSG club crest and abstract geometric lines against a rich, dark atmospheric purple background, highlighting his artistry.</p>
                     </div>
                 </div>
 
-                <div class="work-card">
+                <div class="work-card" data-category="sports">
                     <div class="card-img">
                         <img src="assets/image 5.jpeg" alt="United for Glory - Champions League Concept" loading="lazy">
                     </div>
                     <div class="card-info">
                         <h3 data-en="United for Glory - Champions League Concept" data-tr="Zafer İçin Bir Arada - Şampiyonlar Ligi Konsepti">United for Glory - Champions League Concept</h3>
-                        <p class="card-desc" data-en="An intense, panoramic Champions League concept scene featuring a powerful Fenerbahçe team huddle on a custom-branded pitch. It dramatically combines player proximity with an atmospheric stadium background and a storm-lit sky, all brought together with a sharp, bold typographic base." data-tr="Fenerbahçe takımının sahada kenetlenmesini gösteren panoramik bir Şampiyonlar Ligi konsept sahnesi. Oyuncu yakınlığı, fırtınalı gökyüzü ve stadyum atmosferi ile birleştirilmiştir.">An intense, panoramic Champions League concept scene featuring a powerful Fenerbahçe team huddle on a custom-branded pitch. It dramatically combines player proximity with an atmospheric stadium background and a storm-lit sky, all brought together with a sharp, bold typographic base.</p>
                     </div>
                 </div>
-                <div class="work-card">
+
+                <div class="work-card" data-category="sports">
                     <div class="card-img">
                         <img src="assets/image 6.jpeg" alt="Fenerbahçe: European Ambitions" loading="lazy">
                     </div>
                     <div class="card-info">
                         <h3 data-en="Fenerbahçe: European Ambitions" data-tr="Fenerbahçe – UEFA Avrupa Ligi Yolculuğu">Fenerbahçe: European Ambitions</h3>
-                        <p class="card-desc" data-en="In this UEFA Europa League themed concept work, the club president, manager Jorge Jesus, and the team's unified huddle are combined against a dramatic, stormy sky background. An epic visual storytelling is aimed with golden light rays and the trophy placed in the foreground. It was designed using layered visual editing and color manipulation techniques." data-tr="UEFA Avrupa Ligi temalı bu konsept çalışmada, kulüp başkanı, teknik direktör Jorge Jesus ve takımın kenetlenme anı dramatik, fırtınalı bir gökyüzü arka planıyla birleştirilmiştir. Altın sarısı tonlarındaki ışık hüzmeleri ve ön plana yerleştirilen kupa objesiyle epik bir görsel hikaye anlatımı hedeflenmiştir. Katmanlı görsel düzenleme ve renk manipülasyonu teknikleri kullanılarak tasarlanmıştır.">In this UEFA Europa League themed concept work, the club president, manager Jorge Jesus, and the team's unified huddle are combined against a dramatic, stormy sky background. An epic visual storytelling is aimed with golden light rays and the trophy placed in the foreground. It was designed using layered visual editing and color manipulation techniques.</p>
                     </div>
                 </div>
-                <div class="work-card">
+
+                <div class="work-card" data-category="sports">
                     <div class="card-img">
                         <img src="assets/image 7.jpeg" alt="Matchday: İstanbulspor vs Fenerbahçe" loading="lazy">
                     </div>
                     <div class="card-info">
                         <h3 data-en="Matchday: İstanbulspor vs Fenerbahçe" data-tr="İstanbulspor - Fenerbahçe Maç Günü">Matchday: İstanbulspor vs Fenerbahçe</h3>
-                        <p class="card-desc" data-en="In this dynamic matchday visual prepared for the Süper Lig fixture, the team's iconic huddle during a goal celebration is chosen as the focal point. While an energetic atmosphere is created with the vibrant yellow smoke effect in the background, the match details highlighted with a modern and bold typography give the design a corporate identity." data-tr="Süper Lig müsabakası için hazırlanan bu dinamik maç günü görselinde, takımın gol sevincindeki ikonik kenetlenme anı odak noktası olarak seçilmiştir. Arka plandaki canlı sarı duman efektiyle enerjik bir atmosfer yaratılırken, modern ve kalın tipografi tercihiyle ön plana çıkarılan maç bilgileri tasarıma kurumsal bir kimlik kazandırmaktadır.">In this dynamic matchday visual prepared for the Süper Lig fixture, the team's iconic huddle during a goal celebration is chosen as the focal point. While an energetic atmosphere is created with the vibrant yellow smoke effect in the background, the match details highlighted with a modern and bold typography give the design a corporate identity.</p>
                     </div>
                 </div>
-                <div class="work-card">
+
+                <div class="work-card" data-category="sports">
                     <div class="card-img">
                         <img src="assets/image 8.jpeg" alt="Fenerbahçe vs Ankaragücü: On the Ball" loading="lazy">
                     </div>
                     <div class="card-info">
                         <h3 data-en="Fenerbahçe vs Ankaragücü: On the Ball" data-tr="Fenerbahçe - Ankaragücü Oyuncu Odaklı Tasarım">Fenerbahçe vs Ankaragücü: On the Ball</h3>
-                        <p class="card-desc" data-en="A dynamic sports poster focusing on the duel and ball control of two rival players. To create a sense of depth, the stadium image in the background is blurred, and the players' mobility and focal point on the pitch are enhanced with a subtle light effect (glow) applied around them and smoke details in the foreground." data-tr="İki rakip oyuncunun ikili mücadelesini ve top kontrolünü merkeze alan dinamik bir spor posteri. Derinlik hissi yaratmak amacıyla arka plandaki stadyum görseli flu bırakılmış, sporcuların etrafına uygulanan hafif ışık efekti (glow) ve ön plandaki duman detayları ile oyuncuların sahadaki hareketliliği ve odak noktası güçlendirilmiştir.">A dynamic sports poster focusing on the duel and ball control of two rival players. To create a sense of depth, the stadium image in the background is blurred, and the players' mobility and focal point on the pitch are enhanced with a subtle light effect (glow) applied around them and smoke details in the foreground.</p>
                     </div>
                 </div>
-                <div class="work-card">
+
+                <div class="work-card" data-category="sports">
                     <div class="card-img">
                         <img src="assets/image 9.jpeg" alt="UEFA Europa League: Group Stage Infographic" loading="lazy">
                     </div>
                     <div class="card-info">
                         <h3 data-en="UEFA Europa League: Group Stage Infographic" data-tr="UEFA Avrupa Ligi Grubumuz">UEFA Europa League: Group Stage Infographic</h3>
-                        <p class="card-desc" data-en="An information-focused social media graphic listing Fenerbahçe's opponents in the UEFA Europa League. A clean and modern infographic design with high readability for fans was created by balancing the club's corporate yellow and navy blue tones, sharp-edged stripes, and logos." data-tr="Fenerbahçe’nin UEFA Avrupa Ligi'ndeki rakiplerini listeleyen, bilgi odaklı bir sosyal medya grafiği. Kulübün kurumsal renkleri olan sarı ve lacivert tonlarının ağırlıkta olduğu, keskin hatlara sahip şeritler ve logoların dengeli yerleşimiyle taraftarlar için okunabilirliği yüksek, temiz ve modern bir infografik tasarımı oluşturulmuştur.">An information-focused social media graphic listing Fenerbahçe's opponents in the UEFA Europa League. A clean and modern infographic design with high readability for fans was created by balancing the club's corporate yellow and navy blue tones, sharp-edged stripes, and logos.</p>
                     </div>
                 </div>
-                <div class="work-card">
+
+                <div class="work-card" data-category="sports">
                     <div class="card-img">
                         <img src="assets/image 10.jpeg" alt="Away Day: Rennes vs Fenerbahçe" loading="lazy">
                     </div>
                     <div class="card-info">
                         <h3 data-en="Away Day: Rennes vs Fenerbahçe" data-tr="Rennes - Fenerbahçe Deplasman Konsepti">Away Day: Rennes vs Fenerbahçe</h3>
-                        <p class="card-desc" data-en="An away match visual dominated by deep navy blue tones, emphasizing the unity of manager Jorge Jesus and the players. An asymmetrical balance is established with assertive typography placed on the left vertical axis and club logos in the top right corner. The composition is deepened with a fog effect around the player group and a neon contour on the manager's figure." data-tr="Teknik direktör Jorge Jesus ve oyuncuların birlikteliğini vurgulayan, derin lacivert tonlarının hakim olduğu bir deplasman maçı görseli. Sol dikey aksa yerleştirilen iddialı tipografi ve sağ üst köşedeki kulüp logolarıyla asimetrik bir denge kurulmuştur. Oyuncu grubunun etrafındaki sis efekti ve teknik direktör figürünün üzerindeki neon kontur ile kompozisyon derinleştirilmiştir.">An away match visual dominated by deep navy blue tones, emphasizing the unity of manager Jorge Jesus and the players. An asymmetrical balance is established with assertive typography placed on the left vertical axis and club logos in the top right corner. The composition is deepened with a fog effect around the player group and a neon contour on the manager's figure.</p>
                     </div>
                 </div>
-                <div class="work-card">
+
+                <div class="work-card" data-category="sports">
                     <div class="card-img">
                         <img src="assets/image 11.jpeg" alt="Fenerbahçe SK: Match Day Concept" loading="lazy">
                     </div>
                     <div class="card-info">
                         <h3 data-en="Fenerbahçe SK: Match Day Concept" data-tr="Fenerbahçe SK: Maç Günü Konsepti">Fenerbahçe SK: Match Day Concept</h3>
-                        <p class="card-desc" data-en="A vibrant digital sports poster designed for a Fenerbahçe match day event, highlighting key players with clean background masking, official club branding, and custom textured typography." data-tr="Fenerbahçe maç günü etkinliği için tasarlanmış, önemli oyuncuları temiz bir arka plan maskelemesi, resmi kulüp markalaması ve özel dokulu tipografi ile öne çıkaran canlı bir dijital spor posteri.">A vibrant digital sports poster designed for a Fenerbahçe match day event, highlighting key players with clean background masking, official club branding, and custom textured typography.</p>
+                    </div>
+                </div>
+                <div class="work-card" data-category="wallpaper">
+                    <div class="card-img square-img contain-img">
+                        <img src="assets/vedat_wallpaper.jpg" alt="Vedat Muriqi - Wallpaper" loading="lazy">
+                    </div>
+                    <div class="card-info">
+                        <h3 data-en="Vedat Muriqi - Wallpaper" data-tr="Vedat Muriqi - Duvar Kağıdı">Vedat Muriqi - Duvar Kağıdı</h3>
                     </div>
                 </div>
 
-            </div>
-        </section>
-
-        <section class="works-section fade-in-scroll" id="posters">
-            <h2 class="section-title" data-en="POSTERS" data-tr="AFİŞ">POSTERS</h2>
-            <div class="works-grid">
-                <div class="work-card">
-                    <div class="card-img square-img">
-                        <img src="assets/uygar_burger_poster.jpg" alt="Uygar Burger - Bir Isırık Yetmez" loading="lazy">
+                <div class="work-card" data-category="logo">
+                    <div class="card-img square-img contain-img">
+                        <img src="assets/mea_graphs_logo.jpg" alt="MEA Graphs Logo Design" loading="lazy">
                     </div>
                     <div class="card-info">
-                        <h3 data-en="Uygar Burger - One Bite is Not Enough" data-tr="Uygar Burger - Bir Isırık Yetmez">Uygar Burger - Bir Isırık Yetmez</h3>
-                        <p class="card-desc" data-en="A promotional social media poster design for Uygar Burger, featuring the slogan 'One bite is not enough'." data-tr="Uygar Burger için hazırlanmış, 'Bir ısırık yetmez' sloganını öne çıkaran promosyonel sosyal medya afişi tasarımı.">Uygar Burger için hazırlanmış, 'Bir ısırık yetmez' sloganını öne çıkaran promosyonel sosyal medya afişi tasarımı.</p>
+                        <h3 data-en="MEA Graphs - Logo Design" data-tr="MEA Graphs - Logo Tasarımı">MEA Graphs - Logo Tasarımı</h3>
                     </div>
                 </div>
 
-                <div class="work-card">
-                    <div class="card-img">
-                        <img src="assets/image 15.jpeg" alt="Erasmus+ Staj Tamamlama Posteri" loading="lazy">
+                <div class="work-card" data-category="logo">
+                    <div class="card-img square-img contain-img">
+                        <img src="assets/uygar_burger_logo.jpg" alt="Uygar Burger Logo Design" loading="lazy">
                     </div>
                     <div class="card-info">
-                        <h3 data-en="Erasmus+ Internship Completion Poster" data-tr="Erasmus+ Staj Tamamlama Posteri">Erasmus+ Staj Tamamlama Posteri</h3>
-                        <p class="card-desc" data-en="A poster design announcing the completion of a 21-day e-commerce website application internship by 6 Information Technology students under the Erasmus+ program." data-tr="Bilişim Teknolojileri alanından 6 öğrencinin Erasmus+ programı kapsamında e-ticaret web sitesi uygulamaları alanındaki 21 günlük stajlarını tamamlamalarını duyuran bir afiş tasarımı.">Bilişim Teknolojileri alanından 6 öğrencinin Erasmus+ programı kapsamında e-ticaret web sitesi uygulamaları alanındaki 21 günlük stajlarını tamamlamalarını duyuran bir afiş tasarımı.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section class="works-section fade-in-scroll" id="wallpapers">
-            <h2 class="section-title fade-in-scroll" data-en="WALLPAPERS" data-tr="DUVAR KAĞIDI">WALLPAPERS</h2>
-            <div class="works-grid">
-                <div class="work-card">
-                    <div class="card-img">
-                        <img src="assets/vedat_wallpaper.jpg" alt="Vedat Muriqi - Mobile Wallpaper" loading="lazy">
-                    </div>
-                    <div class="card-info">
-                        <h3 data-en="Vedat Muriqi - Mobile Wallpaper" data-tr="Vedat Muriqi - Duvar Kağıdı">Vedat Muriqi - Duvar Kağıdı</h3>
-                        <p class="card-desc" data-en="A special mobile wallpaper design for Fenerbahçe fans, featuring Vedat Muriqi's goal celebration and his iconic number 94." data-tr="Vedat Muriqi'nin gol sevinci ve ikonik 94 numarası ile tasarlanmış, Fenerbahçe taraftarları için özel mobil duvar kağıdı tasarımı.">Vedat Muriqi'nin gol sevinci ve ikonik 94 numarası ile tasarlanmış, Fenerbahçe taraftarları için özel mobil duvar kağıdı tasarımı.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section class="works-section fade-in-scroll" id="logos">
-            <h2 class="section-title" data-en="LOGOS" data-tr="LOGOLAR">LOGOS</h2>
-            <div class="works-grid">
-                <div class="work-card">
-                    <div class="card-img">
-                        <img src="assets/uygar_burger_logo.jpg" alt="Uygar Burger - Logo Concept" loading="lazy">
-                    </div>
-                    <div class="card-info">
-                        <h3 data-en="Uygar Burger - Logo Concept" data-tr="Uygar Burger - Logo Konsepti">Uygar Burger - Logo Konsepti</h3>
-                        <p class="card-desc" data-en="A logo concept for Uygar Burger, dynamically combining a modern burger icon with the brand's name." data-tr="Uygar Burger için hazırlanan, modern hatlara sahip burger ikonu ve markanın ismini dinamik bir şekilde birleştiren logo konsepti.">Uygar Burger için hazırlanan, modern hatlara sahip burger ikonu ve markanın ismini dinamik bir şekilde birleştiren logo konsepti.</p>
+                        <h3 data-en="Uygar Burger - Logo Design" data-tr="Uygar Burger - Logo Tasarımı">Uygar Burger - Logo Tasarımı</h3>
                     </div>
                 </div>
 
-                <div class="work-card">
-                    <div class="card-img">
-                        <img src="assets/mea_graphs_logo.jpg" alt="MEA Graphs - Personal Branding Logo" loading="lazy">
-                    </div>
-                    <div class="card-info">
-                        <h3 data-en="MEA Graphs - Personal Branding" data-tr="MEA Graphs - Kişisel Marka Logosu">MEA Graphs - Kişisel Marka Logosu</h3>
-                        <p class="card-desc" data-en="A custom personal branding logo design for MEA Graphs, creatively inspired by the Fenerbahçe theme and the lighthouse symbol." data-tr="Kendi kişisel markam olan MEA Graphs için Fenerbahçe temasından ve deniz feneri sembolünden esinlenerek hazırladığım özel logo tasarımı.">Kendi kişisel markam olan MEA Graphs için Fenerbahçe temasından ve deniz feneri sembolünden esinlenerek hazırladığım özel logo tasarımı.</p>
-                    </div>
-                </div>
-
-                <div class="work-card">
-                    <div class="card-img">
-                        <img src="assets/image 14.jpeg" alt="Primes Fener Logo Concept" loading="lazy">
-                    </div>
-                    <div class="card-info">
-                        <h3 data-en="Primes Fener Logo Concept" data-tr="Primes Fener Logo Konsepti">Primes Fener Logo Concept</h3>
-                        <p class="card-desc" data-en="A bold illustrative logo design featuring Alex de Souza." data-tr="Alex de Souza'nın yer aldığı cesur ve illüstratif bir logo tasarımı.">A bold illustrative logo design featuring Alex de Souza.</p>
-                    </div>
-                </div>
-                <div class="work-card">
-                    <div class="card-img">
+                <div class="work-card" data-category="logo">
+                    <div class="card-img square-img contain-img">
                         <img src="assets/image13.jpeg" alt="Dikine Futbol Logo Concept" loading="lazy">
                     </div>
                     <div class="card-info">
-                        <h3 data-en="Dikine Futbol Logo Concept" data-tr="Dikine Futbol Logo Konsepti">Dikine Futbol Logo Concept</h3>
-                        <p class="card-desc" data-en="A tactical football channel logo design with a modern touch." data-tr="Modern bir dokunuşa sahip taktiksel futbol kanalı logo tasarımı.">A tactical football channel logo design with a modern touch.</p>
+                        <h3 data-en="Dikine Futbol Logo Concept" data-tr="Dikine Futbol Logo Konsepti">Dikine Futbol Logo Konsepti</h3>
+                    </div>
+                </div>
+
+                <div class="work-card" data-category="logo">
+                    <div class="card-img square-img contain-img">
+                        <img src="assets/image 14.jpeg" alt="Primes Fener Logo Concept" loading="lazy">
+                    </div>
+                    <div class="card-info">
+                        <h3 data-en="Primes Fener Logo Concept" data-tr="Primes Fener Logo Konsepti">Primes Fener Logo Konsepti</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="works-footer fade-in-scroll">
+                <a href="#" class="view-all-link">
+                    <span data-en="View All Works" data-tr="Tüm Çalışmaları Gör">Tüm Çalışmaları Gör</span> &rarr;
+                </a>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section class="services-section" id="services">
+            <div class="services-container">
+                <div class="service-item fade-in-scroll">
+                    <div class="service-num">01</div>
+                    <div class="service-content">
+                        <h3 data-en="Social Media Design" data-tr="Sosyal Medya Tasarımı">Sosyal Medya Tasarımı</h3>
+                        <p data-en="Instagram post, story, advertisement, and campaign content." data-tr="Instagram post, story, reklam ve kampanya içerikleri.">Instagram post, story, reklam ve kampanya içerikleri.</p>
+                    </div>
+                </div>
+                
+                <div class="service-item fade-in-scroll">
+                    <div class="service-num">02</div>
+                    <div class="service-content">
+                        <h3 data-en="Football & Sports Design" data-tr="Futbol & Spor Tasarımı">Futbol & Spor Tasarımı</h3>
+                        <p data-en="Matchday, transfer, squad, fixture, and player-focused designs." data-tr="Maç günü, transfer, kadro, fikstür ve oyuncu odaklı tasarımlar.">Maç günü, transfer, kadro, fikstür ve oyuncu odaklı tasarımlar.</p>
+                    </div>
+                </div>
+                
+                <div class="service-item fade-in-scroll">
+                    <div class="service-num">03</div>
+                    <div class="service-content">
+                        <h3 data-en="Custom Graphic Design" data-tr="Özel Grafik Tasarım">Özel Grafik Tasarım</h3>
+                        <p data-en="Creative visual works tailored to specific needs." data-tr="İhtiyaca özel yaratıcı görsel çalışmalar.">İhtiyaca özel yaratıcı görsel çalışmalar.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="contact-section" id="contact">
-            <h2 class="section-title fade-in-scroll" data-en="CONTACT" data-tr="İLETİŞİM">CONTACT</h2>
-            <p class="fade-in-scroll" data-en="Get in touch for collaborations and inquiries." data-tr="İşbirlikleri ve sorularınız için benimle iletişime geçin.">Get in touch for collaborations and inquiries.</p>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mehmetemirakdogann@gmail.com" target="_blank" rel="noopener noreferrer" class="btn-outline gmail-btn fade-in-scroll">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                <span data-en="MAIL VIA GMAIL" data-tr="GMAIL İLE ULAŞ">MAIL VIA GMAIL</span>
-            </a>
+        <!-- ABOUT SECTION -->
+        <section class="about-section fade-in-scroll" id="about">
+            <h2 class="about-title" data-en="I am Emir." data-tr="Ben Emir.">Ben Emir.</h2>
+            <p class="about-desc" data-en="I produce graphic designs that help brands and businesses appear stronger in the digital world." data-tr="Markaların ve işletmelerin dijital dünyada daha güçlü görünmesine yardımcı olan grafik tasarımlar üretiyorum.">Markaların ve işletmelerin dijital dünyada daha güçlü görünmesine yardımcı olan grafik tasarımlar üretiyorum.</p>
+            <p class="about-skills">Photoshop &middot; Illustrator &middot; <span data-en="Social Media Design" data-tr="Sosyal Medya Tasarımı">Sosyal Medya Tasarımı</span></p>
         </section>
 
-        <section class="about-section fade-in-scroll" id="about">
-            <h2 class="section-title" data-en="ABOUT ME" data-tr="HAKKIMDA">ABOUT ME</h2>
-            <div class="about-content">
-                <p data-en="I am an 18-year-old graphic designer and a graduate of Merzifon Vocational and Technical Anatolian High School. I combine the core discipline I acquired during my high school education with my passion for the design world and my graphic design skills, which started as a hobby and turned professional." data-tr="Merzifon Mesleki ve Teknik Anadolu Lisesi mezunu, 18 yaşında genç bir grafik tasarımcıyım. Lise eğitimim boyunca edindiğim temel disiplini, tasarım dünyasına olan tutkum ve hobi olarak başlayıp profesyonelleştirdiğim grafik tasarım yeteneklerimle birleştiriyorum.">I am an 18-year-old graphic designer and a graduate of Merzifon Vocational and Technical Anatolian High School. I combine the core discipline I acquired during my high school education with my passion for the design world and my graphic design skills, which started as a hobby and turned professional.</p>
-                <p data-en="Believing in the power of visual communication, I focus on producing modern, aesthetic, and functional digital content. By utilizing Adobe software and digital design tools, I continuously improve myself in areas such as corporate identity, social media management, and poster design. I am a highly motivated designer who is open to innovative ideas, a fast learner, and eager to take part in visionary projects." data-tr="Görsel iletişimin gücüne inanıyor; modern, estetik ve işlevsel dijital içerikler üretmeye odaklanıyorum. Adobe programları ve dijital tasarım araçlarını kullanarak kurumsal kimlik, sosyal medya yönetimi ve poster tasarımları gibi alanlarda kendimi sürekli geliştiriyorum. Yenilikçi fikirlere açık, hızlı öğrenen ve vizyoner projelerde yer almak isteyen motive bir tasarımcıyım.">Believing in the power of visual communication, I focus on producing modern, aesthetic, and functional digital content. By utilizing Adobe software and digital design tools, I continuously improve myself in areas such as corporate identity, social media management, and poster design. I am a highly motivated designer who is open to innovative ideas, a fast learner, and eager to take part in visionary projects.</p>
-            </div>
+        <!-- CTA / CONTACT SECTION -->
+        <section class="cta-section fade-in-scroll" id="contact">
+            <h2 class="cta-title" data-en="Have a project?" data-tr="Bir projen mi var?">Bir projen mi var?</h2>
+            <p class="cta-subtitle" data-en="Let's bring it to life together." data-tr="Birlikte hayata geçirelim.">Birlikte hayata geçirelim.</p>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mehmetemirakdogann@gmail.com" target="_blank" rel="noopener noreferrer" class="btn-solid">
+                <span data-en="Get a Quote" data-tr="Teklif Al">Teklif Al</span> &rarr;
+            </a>
         </section>
     </main>
+
+    <footer class="minimal-footer">
+        <div class="footer-container">
+            <div class="footer-logo">EMİR AKDOĞAN</div>
+            <nav class="footer-nav">
+                <a href="#home" data-en="Home" data-tr="Ana Sayfa">Ana Sayfa</a>
+                <a href="#design" data-en="Works" data-tr="Çalışmalar">Çalışmalar</a>
+                <a href="#services" data-en="Services" data-tr="Hizmetler">Hizmetler</a>
+                <a href="#contact" data-en="Contact" data-tr="İletişim">İletişim</a>
+            </nav>
+            <div class="footer-social">
+                <a href="#" aria-label="Instagram">IG</a>
+                <a href="#" aria-label="Behance">BE</a>
+                <a href="#" aria-label="LinkedIn">IN</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Emir Akdoğan. <span data-en="All rights reserved." data-tr="Tüm hakları saklıdır.">Tüm hakları saklıdır.</span></p>
+        </div>
+    </footer>
 
     <button id="back-to-top" aria-label="Back to top">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
