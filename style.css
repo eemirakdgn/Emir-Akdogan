@@ -1026,4 +1026,13 @@ header {
     .laptop-mockup {
         max-width: 100%;
     }
+    header {
+        padding: 1rem 5%;
+    }
+    .hero-content {
+        padding-top: 8rem;
+    }
+    .nav-right .btn-outline {
+        display: none;
+    }
 }
