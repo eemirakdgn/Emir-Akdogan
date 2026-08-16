@@ -1047,4 +1047,10 @@ header {
     .nav-right .btn-outline {
         display: none;
     }
+    #stars {
+        animation: none !important;
+    }
+    .bg-blur {
+        display: none !important;
+    }
 }
