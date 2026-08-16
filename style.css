@@ -983,4 +983,47 @@ header {
 @media (max-width: 768px) {
     .footer-container { flex-direction: column; text-align: center; }
     .footer-nav { flex-direction: column; gap: 1rem; }
+    
+    /* MOBILE RESPONSIVE TWEAKS */
+    .hero-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 3rem;
+    }
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+    }
+    .hero-text h1, .hero-text p {
+        text-align: center;
+    }
+    .hero-text .btn-group {
+        justify-content: center;
+    }
+    .works-filters {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    .filter-btn {
+        padding: 8px 16px;
+        font-size: 0.8rem;
+    }
+    .works-grid {
+        grid-template-columns: 1fr !important;
+        justify-content: center;
+    }
+    .hero-visual {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+    .laptop-mockup {
+        max-width: 100%;
+    }
 }
